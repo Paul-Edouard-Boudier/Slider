@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <button class="resetButton" data-action="reset">Reset</button>
+    <h1>slider</h1>
+    <div class="container">
+      <button data-button="left">Gauche</button>
+      <div class=" slider">
+        <div class="image">
+          <img data-number="1" class="hidden" src="images/landscape1.jpg" alt="">
+          <img data-number="2" class="hidden" src="images/landscape2.jpg" alt="">
+          <img data-number="3" class="hidden" src="images/landscape3.jpg" alt="">
+        </div>
+        <div class="container">
+          <div data-dot="1" class="round black"></div>
+          <div data-dot="2" class="round black"></div>
+          <div data-dot="3" class="round black"></div>
+        </div>
+      </div>
+      <button data-button="right">Droite</button>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="javascript/script.js"></script>
+</html>
