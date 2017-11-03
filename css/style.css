@@ -42,6 +42,9 @@ img {
   margin-right: 4px;
   opacity: 0.8;
 }
+.round:hover {
+  cursor: pointer;
+}
 
 .black {
   background-color: black;
