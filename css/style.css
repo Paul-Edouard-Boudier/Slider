@@ -45,6 +45,9 @@ img {
 .round:hover {
   cursor: pointer;
 }
+.arrows:hover {
+  cursor: pointer;
+}
 
 .black {
   background-color: black;
