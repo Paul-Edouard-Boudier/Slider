@@ -82,53 +82,33 @@ $(document).ready(function() {
     $("div[data-dot = "+ number +"]").removeClass("white").addClass("black");
     localStorage.setItem("dotState", number);
   });
-
-
-  // $("button[data-button='left']").on("click", function(){
-  //   var length = $("img[data-number]").length;
-  //   var imageNumber = parseInt(localStorage.getItem("imageNumber")) - 1;
-  //   localStorage.setItem("imageNumber", imageNumber.toString());
-  //   var dotNumber = parseInt(localStorage.getItem("dotState")) - 1;
-  //   localStorage.setItem("dotState", dotNumber.toString());
-  //   if ($("img[data-number = " + imageNumber + "]").length == 0) {
-  //     $("img[data-number = " + length + "]").removeClass("hidden");
-  //     $("img[data-number != " + length + "]").addClass("hidden");
-  //     $("div[data-dot != " + length + "]").removeClass("black").addClass("white");
-  //     $("div[data-dot = " + length + "]").removeClass("white").addClass("black");
-  //     localStorage.setItem("imageNumber", length);
-  //     localStorage.setItem("dotState", length);
-  //   }
-  //   else {
-  //     $("img[data-number != " + imageNumber + "]").addClass("hidden");
-  //     $("img[data-number = " + imageNumber + "]").removeClass("hidden");
-  //     $("div[data-dot != " + dotNumber + "]").removeClass("black").addClass("white");
-  //     $("div[data-dot = " + dotNumber + "]").removeClass("white").addClass("black");
-  //   }
-  // });
-  //
-  // $("button[data-button='right']").on("click", function(){
-  //   var imageNumber = parseInt(localStorage.getItem("imageNumber")) + 1;
-  //   localStorage.setItem("imageNumber", imageNumber.toString());
-  //   var dotNumber = parseInt(localStorage.getItem("dotState")) + 1;
-  //   localStorage.setItem("dotState", dotNumber.toString());
-  //   if ($("img[data-number = " + imageNumber + "]").length == 0) {
-  //     $("img[data-number = '1']").removeClass("hidden");
-  //     $("img[data-number != '1']").addClass("hidden");
-  //     $("div[data-dot != '1']").removeClass("black").addClass("white");
-  //     $("div[data-dot = '1']").removeClass("white").addClass("black");
-  //     localStorage.setItem("imageNumber", "1");
-  //     localStorage.setItem("dotState", "1");
-  //     // debugger;
-  //     // if right then go to data-number = 1 same for left but reverse
-  //   }
-  //   else {
-  //     $("img[data-number != " + imageNumber + "]").addClass("hidden");
-  //     $("img[data-number = " + imageNumber + "]").removeClass("hidden");
-  //     $("div[data-dot != " + dotNumber + "]").removeClass("black").addClass("white");
-  //     $("div[data-dot = " + dotNumber + "]").removeClass("white").addClass("black");
-  //   }
-  //   // debugger;
-  // });
-
-
 });
+
+// $(document).ready(function() {
+//   var totalSize = $('.img-slider').width() * $('.img-slider').length;  get the total size of the div that contain the images
+//   var oneSize = $('.img-slider').width(); size of one image
+//   var currentSize = 0;
+//   $('button[data-action="left"], button[data-action="right"]').on('click', function() {
+//     var direction = $(this).data('action');
+//     if(direction == 'right') {
+//       if((currentSize + oneSize) < totalSize) {
+//         currentSize += oneSize ;
+//         $('.slider').css('transform', 'translateX(-' + currentSize + 'px)');
+//       } else {
+//         $('.slider').css('transform', 'translateX(0px)');
+//         currentSize = oneSize;
+//       }
+//       console.log('A Droite');
+//     } else {
+//       if(currentSize - oneSize < 0) {
+//         currentSize = totalSize - oneSize;
+//         $('.slider').css('transform', 'translateX(-' + currentSize + 'px)');
+//       } else {
+//         currentSize -= oneSize;
+//         $('.slider').css('transform', 'translateX(-' + currentSize + 'px)');
+//       }
+//     };
+//   });
+//
+// });
+//
