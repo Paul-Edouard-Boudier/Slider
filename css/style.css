@@ -13,6 +13,7 @@ h1 {
   border: 1px solid black;
   height: 77vh;
   width: 77vw;
+  background-color: black;
 }
 .container {
   display: flex;
