@@ -38,6 +38,9 @@ img {
   width: 30px;
   border-radius: 50%;
   border: 1px solid black;
+  margin-top: -40px;
+  margin-right: 4px;
+  opacity: 0.8;
 }
 
 .black {
