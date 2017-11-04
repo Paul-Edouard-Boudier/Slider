@@ -15,7 +15,7 @@ h1 {
   width: 77vw;
   background-color: black;
 }
-.container {
+.sliderContainer {
   display: flex;
   justify-content: center;
   align-items: center;
