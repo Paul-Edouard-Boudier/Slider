@@ -28,7 +28,7 @@ $(document).ready(function() {
     $("div .sliderDot[data-dot="+ number +"]").addClass("black").removeClass("white");
   }
 
-  $("button[data-button='left'], button[data-button='right']").on("click", function(){
+  $("i[data-button='left'], i[data-button='right']").on("click", function(){
     var direction = $(this).data("button");
     if (direction == "left") {
       var length = $("img.sliderImage[data-number]").length; // length of array = number of images in the index.html so when i do not
