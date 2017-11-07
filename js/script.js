@@ -83,29 +83,28 @@ $(document).ready(function() {
     localStorage.setItem("dotState", number);
   });
 });
-
 // $(document).ready(function() {
-//   var totalSize = $('.img-slider').width() * $('.img-slider').length;  get the total size of the div .round that contain the images
-//   var oneSize = $('.img-slider').width(); size of one image
+//   var totalSize = $('.image').width() * $('.image').length;  // get the total size of the div .round that contain the images
+//   var oneSize = $('.image').width(); // size of one image
 //   var currentSize = 0;
-//   $('button[data-action="left"], button[data-action="right"]').on('click', function() {
-//     var direction = $(this).data('action');
+//   $('i[data-button="left"], i[data-button="right"]').on('click', function() {
+//     var direction = $(this).data('button');
 //     if(direction == 'right') {
 //       if((currentSize + oneSize) < totalSize) {
 //         currentSize += oneSize ;
-//         $('.slider').css('transform', 'translateX(-' + currentSize + 'px)');
+//         $('.image').css('transform', 'translateX(-' + currentSize + 'px)');
 //       } else {
-//         $('.slider').css('transform', 'translateX(0px)');
+//         $('.image').css('transform', 'translateX(0px)');
 //         currentSize = oneSize;
 //       }
 //       console.log('A Droite');
 //     } else {
 //       if(currentSize - oneSize < 0) {
 //         currentSize = totalSize - oneSize;
-//         $('.slider').css('transform', 'translateX(-' + currentSize + 'px)');
+//         $('.image').css('transform', 'translateX(-' + currentSize + 'px)');
 //       } else {
 //         currentSize -= oneSize;
-//         $('.slider').css('transform', 'translateX(-' + currentSize + 'px)');
+//         $('.image').css('transform', 'translateX(-' + currentSize + 'px)');
 //       }
 //     };
 //   });
